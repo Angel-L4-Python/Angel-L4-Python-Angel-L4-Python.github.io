@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quests</title>
+    <link rel="icon" type="image/x-icon" href="Images/Icon/Logo.png">
+    <link rel="stylesheet" href="stylesQuests.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar" id="navbar">
+            <ul>
+                <li class="image-item">
+                    <img src="Images/NavBar/Logo.png" alt="Inazuma symbol" width="203px" height="64px" /></li>
+                  
+                <li><a class="active" a href="Quests.html">Quests</a></li>
+    
+                <li class="dropdown"><a href="About.html" target="_self">About</a>
+                    <div class="dropdown-content">
+                        <a href="#Inazuma">Inazuma</a>
+                        <a href="#Regions">Regions</a>
+                    </div>
+    
+                <li class="dropdown"><a href="Index.html">Home</a>
+                    <div class="dropdown-content">
+                        <a href="#Trailer">Trailer</a>
+                    </div>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="Quests">
+        <div class="QuestsTitle">
+            <h2>Quests</h2>
+        </div>
+        <div class="slider-container">
+            <div class="text-container">
+                <div class="text-description" id="description1">
+                    <h2>Sacred Sakura Cleansing Ritual</h2>
+                    <p>The Sacred Sakura and the Thunder Sakura symbolize the eternal watch of the Electro Archon, and they have the power to remove evil and cleanse the earth by absorbing the filth into its roots. 
+                        However, the roots are not capable of purifying the accumulated filth on their own, so it is necessary to routinely purify these roots in what is called the Sacred Sakura Cleansing Ritual, which is ordinarily performed by the Grand Narukami Shrine.</p>
+                </div>
+                <div class="text-description" id="description2" style="display: none;">
+                    <h2>Through the Mists</h2>
+                    <p>The situation on Tsurumi Island had gotten worse, and some of Ruu's friends began leaving the island into the "Sea of Darkness." 
+                        Hoping to bring them back, Ruu offered himself as a sacrifice to please the Thunderbird.</p>
+                </div>
+                <div class="text-description" id="description3" style="display: none;">
+                    <h2>Three Realms Gateway Offering</h2>
+                    <p>The Watatsumi Goryou Matsuri is a ceremony that reverses the Holy Soil phenomenon in Watatsumi Island to secure the island's agriculture. 
+                        One day during the ritual, it somehow didn't reverse the Holy Soil phenomenon, which is due to the darkness surrounding Enkanomiya.</p>
+                </div>
+            </div>
+            
+            <div class="image-slider-container">
+                <div class="slider">
+                    <div class="slide">
+                        <div class="image-container">
+                            <img src="Images/Quests/Shrine Maiden.png" alt="Image 1">
+                            <div class="buttons">
+                                <button class="circle-button active" onclick="currentSlide(0)"></button>
+                                <button class="circle-button" onclick="currentSlide(1)"></button>
+                                <button class="circle-button" onclick="currentSlide(2)"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="image-container">
+                            <img src="Images/Quests/Ruu.png" alt="Image 2">
+                            <div class="buttons">
+                                <button class="circle-button" onclick="currentSlide(0)"></button>
+                                <button class="circle-button active" onclick="currentSlide(1)"></button>
+                                <button class="circle-button" onclick="currentSlide(2)"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="image-container">
+                            <img src="Images/Quests/Tsumi.png" alt="Image 3">
+                            <div class="buttons">
+                                <button class="circle-button" onclick="currentSlide(0)"></button>
+                                <button class="circle-button" onclick="currentSlide(1)"></button>
+                                <button class="circle-button active" onclick="currentSlide(2)"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="scriptQuests.js"></script>
+    
+</body>
+</html>

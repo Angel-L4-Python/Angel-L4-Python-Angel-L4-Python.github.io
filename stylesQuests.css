@@ -1,0 +1,145 @@
+@font-face {
+    font-family: dripfont;
+    src: url('Genshin\ Impact\ DRIP\ FONT.otf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    font-family: dripfont;
+    font-size: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+.image-item {
+    float: left;
+}
+li {
+    width: auto;
+    float: right;
+}
+li a.active{
+    color: #B147F0;
+}
+li a, .dropbtn {
+    display: inline-block;
+    color: #C09AE7;
+    text-align: center;
+    padding: 20px 25px;
+    text-decoration: none;
+}
+li a:hover, .dropdown:hover .dropbtn {
+    color: #B147F0;
+}
+li.dropdown {
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 90px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+dropdown-content a {
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover {
+    background-color: #C09AE7;
+}
+.dropdown:hover .dropdown-content {
+    display: grid;
+}
+
+.QuestsTitle h2{
+    font-family: dripfont;
+    font-size: 55px;
+    margin-left: 5%;
+    color: #333163;
+}
+
+.slider-container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+}
+
+.text-container {
+    width: 65%;
+    padding: 20px;
+    box-sizing: border-box;
+    padding-top:25%;
+    text-align: right;
+}
+
+.text-description h2 {
+    font-family: dripfont;
+    font-size: 25px;
+    color: #454297;
+}
+
+.text-description p{
+    font-size: 20px;
+    color: #6e6cae;
+}
+
+.image-slider-container {
+    width: 45%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.image-container {
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.buttons {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.circle-button {
+    background-color: rgba(0,0,0,0.5);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.circle-button.active {
+    background-color: white;
+}

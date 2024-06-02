@@ -1,0 +1,189 @@
+@font-face {
+    font-family: dripfont;
+    src: url('Genshin\ Impact\ DRIP\ FONT.otf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    position: sticky;
+    top: 0%;
+}
+nav{
+    font-family: dripfont;
+    font-size: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+.image-item {
+    float: left;
+}
+li {
+    width: auto;
+    float: right;
+}
+li a.active{
+  color: #B147F0;
+}
+li a, .dropbtn {
+    display: inline-block;
+    color: #C09AE7;
+    text-align: center;
+    padding: 20px 25px;
+    text-decoration: none;
+}
+li a:hover, .dropdown:hover .dropbtn {
+    color: #B147F0;
+}
+li.dropdown {
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 90px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+dropdown-content a {
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover {
+    background-color: #C09AE7;
+}
+.dropdown:hover .dropdown-content {
+    display: grid;
+}
+
+.About {
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.About h2{
+    font-family: dripfont;
+    font-size: 55px;
+    color: #B94B63;
+}
+.image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-wrapper img {
+    width: 100%;
+    height: auto;
+  max-width: 800px;
+}
+.description {
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 20px;
+    color: #C74B82;
+}
+.description h2{
+  font-size: 25px;
+}
+.button{
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 1%;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #EA7698;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #FFAEC9;
+}
+
+.Regions{
+  background-color: #bbaff3;
+  width: 100%;
+  height: 650px;
+  margin-top: 6%;
+}
+.RegionTitle h2{
+  font-family: dripfont;
+  font-size: 55px;
+  padding-top: 2%;
+  margin-top: 3%;
+  margin-left: 5%;
+  margin-bottom: 3%;
+  color: #5f3678;
+}
+
+.gallery {
+  margin-left: 5%;
+  margin-right: 5%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 25px;
+}
+.gallery h2{
+  font-family: dripfont;
+  color: #925bb4;
+  /* color: #864da9; */
+  letter-spacing: 2px;
+}
+
+.imggallery {
+  position: relative;
+  width: 100%;
+  overflow: hidden; /* Ensure content doesn't overflow */
+}
+.imggallery img {
+  width: 100%;
+  height: auto;
+}
+.imggallery:hover {
+  transition: transform 0.3s ease;
+  transform: scale(1.1);
+}
+.imggallery:hover img{
+  filter: contrast(150%);
+}
+
+.hoverdesc {
+  position: absolute;
+  bottom: 2px;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.imggallery:hover .hoverdesc {
+  opacity: 1;
+}
+
+.text {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #c3d3f6;
+  font-size: 20px;
+  text-align: center;
+  width: 90%;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.imggallery:hover .text {
+  opacity: 1;
+}

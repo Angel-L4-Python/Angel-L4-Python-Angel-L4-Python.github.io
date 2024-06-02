@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inazuma</title>
+    <link rel="icon" type="image/x-icon" href="Images/Icon/Logo.png">
+    <link rel="stylesheet" href="stylesIndex.css">
+</head>
+<body>
+    <header>
+    <nav class="navbar" id="navbar">
+        <ul>
+            <li class="image-item">
+                <img src="Images/NavBar/Logo.png" alt="Inazuma symbol" width="203px" height="64px" /></li>
+              
+            <li><a href="Quests.html">Quests</a></li>
+
+            <li class="dropdown"><a href="About.html" target="_self">About</a>
+                <div class="dropdown-content">
+                    <a href="#Inazuma">Inazuma</a>
+                    <a href="#Regions">Regions</a>
+                </div>
+
+            <li class="dropdown"><a class="active" a href="Index.html" target="_self">Home</a>
+                <div class="dropdown-content">
+                    <a href="#Trailer">Trailer</a>
+                </div>
+        </ul>
+    </nav>
+    </header>
+
+    <section id="Home" class="section">
+        <div class="Home">
+            <div class="text">
+                <img src="Images/Home/Raiden.png" alt="" width="601" height="574">
+                <h2>Inazuma Shines Eternal!</h2>
+                <p> Inazuma, the land of eternity. <br>
+                    It is said that the sea surrounding Inazuma is engulfed by storm and tempest. 
+                    To break through the thunderstorms,one must rely on a fleet of experienced sailors and the strongest ships.
+                    But once you pass through the thunderstorms, Inazuma is surely a sight to behold.</p>
+                <a href="https://genshin.hoyoverse.com/pc-launcher/#/" class="button" target="_blank">Play Now!</a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="Trailer" class="section">
+        <div class="Trailer">
+            <h2>Trailer</h2>
+            <div class="vids">
+                <div class="embed">
+                    <iframe class="video" width="1120" height="630" src="https://www.youtube.com/embed/nU0MnCpsUD4?si=LX8kPXTcBNmK8xe_" frameborder="0" allowfullscreen></iframe>
+                    <p class="description">Overcome endless thunderstorms and set foot on the islands of red maple and cherry blossoms. 
+                        On winding shores and towering cliffs, and in forests and mountains full of secrets, witness the Eternity pursued by Her Excellency, the Almighty Narukami Ogosho.</p>
+                </div>
+                <div class="embed">
+                    <iframe class="video" width="1120" height="630" src="https://www.youtube.com/embed/gEOI-Ae_aaU?si=7KTruGgnOEVk4JRA" frameborder="0" allowfullscreen></iframe>
+                    <p class="description">A foreign thunderstorm tears the sky apart, splitting eternity. Flashes of lightning cut through the darkness, as a god's will manifests.
+                        Overcome endless thunderstorms, set foot on the island of cherry blossoms, and witness the Eternity pursued by Her Excellency, the Almighty Narukami Ogosho.</p>
+                </div>
+                <div class="embed">
+                    <iframe class="video" width="1120" height="630" src="https://www.youtube.com/embed/f_5-i0ZJfds?si=i5iyYeM6v2slBlNY" frameborder="0" allowfullscreen></iframe>
+                    <p class="description">The people's wishes gathered under the bright moonlight, as they witnessed the power of lightning and fierce flames, and rejoiced in the smoke of hearths and the light of lanterns.
+                        The moon's glow has illuminated the sky for over a thousand years, and the rock has stood strong for over a millennium. A fleeting moment lingers long, as the world goes on.</p>
+                </div>
+            </div>
+            <button class="prev" onclick="changeEmbed(-1)">&#10094;</button>
+            <button class="next" onclick="changeEmbed(1)">&#10095;</button>
+        </div>
+    </section>
+    
+    <script src="scriptIndex.js"></script>
+
+</body>
+</html>
